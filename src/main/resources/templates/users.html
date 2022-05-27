@@ -7,8 +7,8 @@
 <body>
 <h1>test users html file</h1>
 <form th:action="@{/}" method="post" th:object="${user}">
-    <input type="text" th:field="*{username}"/>
-    <input type="email" th:field="*{email}"/>
+    <input type="text" th:field="*{username}" placeholder="username"/>
+    <input type="email" th:field="*{email}" placeholder="email"/>
     <button type="submit">submit</button>
 
 </form>
